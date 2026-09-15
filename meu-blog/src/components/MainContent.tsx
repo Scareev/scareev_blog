@@ -1,7 +1,11 @@
 import { useState } from "react";
 import BlogItem from "./BlogItem";
 
-const posts = import.meta.glob("../posts/PYTHON/*.md", { as: "raw", eager: true });
+const posts = import.meta.glob("../posts/PYTHON/*.md", {
+  query: "?raw",
+  import: "default",
+  eager: true
+});
 
 const metadados = [
   { caminho: "../posts/PYTHON/Pandas.md", titulo: "1 - Pandas (Básicos)", tipo: "Dados", id: 3 },

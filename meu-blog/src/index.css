@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+* {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+pre, code {
+    font-family: 'Courier New', Consolas, monospace;
+}
